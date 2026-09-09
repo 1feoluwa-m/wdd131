@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+header{
+    display: grid;
+}
+
+header span{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-weight: bolder;
+    background-color: rgb(148, 148, 219);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+}
+
+header nav a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+    background-color: rgb(140, 140, 192);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+main h1{
+    text-align: center;
+    font-weight: bold;
+    grid-column: 1/-1;
+}
+
+.card h2{
+    font-weight: bold;
+    background-color: rgb(148, 148, 219); 
+    padding: 0.5rem;
+    text-align: center;
+}
+.card{
+    border: 5px solid whitesmoke;
+    padding: 1rem;
+    max-width: 850px;
+}
