@@ -37,24 +37,97 @@ header nav a:hover{
 main{
     display: grid;
     grid-template-columns: 2fr 1fr;
-   
-
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 main h1{
     text-align: center;
     font-weight: bold;
     grid-column: 1/-1;
+    margin-bottom: 0;
+}
+
+main h3{
+    text-align: left;
+    text-decoration: none;
+}
+
+.top-parte{
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 20px;
+    align-items: start;
+    padding: 0 1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.top-parte img{
+    grid-column: 2;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.top-parte p{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+    line-height: 2;
+    text-align: center;
+}
+
+.top-part{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 0 1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.top-part p{
+    margin-top: 0;
+    line-height: 2;
+    text-align: center;
+}
+
+
+figure{
+    margin: 1rem;
+    margin-left: 0;
+}
+
+figcaption{
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 .card h2{
     font-weight: bold;
     background-color: rgb(148, 148, 219); 
-    padding: 0.5rem;
+    padding: 0.75rem 0;
     text-align: center;
+    margin-top: 0;
 }
+
+.line-under{
+    padding: 0.75rem 0;
+    text-align: center;
+    border-bottom: 1px solid #d1d5db;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .card{
-    border: 5px solid whitesmoke;
-    padding: 1rem;
-    max-width: 850px;
+    border: 1px solid #c8d1dc;
+    border-radius: 8px;
+    padding: 0 0 1.5rem 0;
+    overflow: hidden;
 }
