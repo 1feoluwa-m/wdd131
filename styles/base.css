@@ -78,6 +78,7 @@ main h3{
     margin-top: 0;
     line-height: 2;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .top-part{
@@ -93,6 +94,7 @@ main h3{
     margin-top: 0;
     line-height: 2;
     text-align: center;
+    margin-bottom: 0;
 }
 
 
@@ -116,12 +118,32 @@ figcaption{
     margin-top: 0;
 }
 
+.card nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 1.5rem;
+    justify-content: center;
+    margin-top: 7rem;
+    padding-left: 3rem;
+}
+
+.card nav ul li a{
+    color: #2b6cb0;
+    font-weight: 900;
+}
+
+.card nav ul li a:hover{
+    color: black;
+}
+
 .line-under{
     padding: 0.75rem 0;
     text-align: center;
     border-bottom: 1px solid #d1d5db;
     margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.1rem;
     padding-bottom: 0.5rem;
 }
 
@@ -130,4 +152,11 @@ figcaption{
     border-radius: 8px;
     padding: 0 0 1.5rem 0;
     overflow: hidden;
+}
+
+footer{
+    background-color: #83b5eb;
+    padding: 0.1rem;
+    margin-top: 2rem;
+    text-align: center;
 }
