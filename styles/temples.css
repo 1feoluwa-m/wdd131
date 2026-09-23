@@ -27,6 +27,7 @@ header{
     color: #916767e8;
     border: none;
     cursor: pointer;
+    order: 1;
 }
 
 
@@ -43,7 +44,7 @@ header nav{
     text-align: center;
     gap: 2rem;
     align-items: flex-end;
-    
+
 }
 
 header nav.show{
