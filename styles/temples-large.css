@@ -4,6 +4,31 @@
         margin: 0 auto;
     }
     
+    #hamburger-button{
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #000 ;
+    }
+
+    header nav a {
+        text-decoration: none;
+        list-style: none;
+        color: rgb(188, 238, 230);
+        font-weight: bold;
+        padding: 12px;
+    }
+
+    header nav a:hover{
+        text-decoration: underline;
+        border-radius: 5px;
+        background-color: rgb(36, 23, 7);
+    }
+
     .temple-contained-gallery{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
