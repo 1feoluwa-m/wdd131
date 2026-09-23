@@ -9,12 +9,31 @@ body{
 
 header{
     font-weight: bolder;
+    padding: 0.5rem 1rem;
+    color: #113523;
+    background-color: beige;
+    padding-bottom: 1.5rem;
 }
+
+.header-place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger-button{
+    font-size: 1.5rem;
+    background: none;
+    color: #916767e8;
+    border: none;
+    cursor: pointer;
+}
+
 
 header p{
     text-align: center;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 2rem;
 }
 
 header nav{
@@ -29,10 +48,13 @@ header nav a {
     list-style: none;
     color: rgb(188, 238, 230);
     font-weight: bold;
+    padding: 4px;
 }
 
 header nav a:hover{
     text-decoration: underline;
+    border-radius: 5px;
+    background-color: rgb(36, 23, 7);
 }
 
 main { 
@@ -41,10 +63,6 @@ main {
 }
 
 main h1{
-    text-align: center;
-}
-
-footer{
     text-align: center;
 }
 
@@ -71,4 +89,12 @@ figcaption{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: beige;
+    margin-top: 2rem;
 }
