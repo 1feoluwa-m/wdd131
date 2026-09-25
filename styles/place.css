@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family:  "Roboto", sans-serif;
+   
+}
+
+header{
+    background-color: rgb(1, 39, 1) ;
+    color: rgba(255, 255, 255, 0.897);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border-bottom: 4px solid black;
+    border-right: 4px solid rgba(202, 8, 8, 0.87);
+    border-left: 4px solid rgba(202, 8, 8, 0.87);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+.data-border{
+    border-bottom: 0.1px solid gray;
+}
+
+.data-border h2, .weather-border h2{
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.data-border ul, .weather-border ul{
+    list-style: none;
+    padding: 1.2rem;
+
+}
+
+.data-border ul li span{
+    text-align: left;
+}
+
+
+
+
+
+.data-border li, .weather-border li{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.data-border li span, .weather-border li span{
+    font-weight: 600;
+}
+
+.weather-icon img{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+.hero-images img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+
+}
