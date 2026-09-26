@@ -82,9 +82,9 @@ main{
 
 .hero-images img{
     width: 100%;
-    height: 100vh;
+    height: auto;
     object-fit: contain;
-    border: 4px solid #ccc;
+    border: 1px solid #ccc;
     padding: 0.1rem;
     border-radius: 6px;
     display: block;
