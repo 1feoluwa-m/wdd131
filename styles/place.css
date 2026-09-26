@@ -75,7 +75,6 @@ main{
 
 .hero-images img{
     height: auto;
-    margin: 0.2rem;
     max-width: 100%;
     box-sizing: border-box;
 }
