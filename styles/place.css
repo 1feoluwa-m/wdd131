@@ -93,3 +93,11 @@ main{
     max-width: 100%;
 
 }
+
+
+.areas{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 3px;
+}
