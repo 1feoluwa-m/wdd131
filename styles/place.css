@@ -21,11 +21,11 @@ header{
     padding: 0.5rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    max-width: 500px;
     margin: 0 auto;
 }
 
 main{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -86,4 +86,63 @@ main{
     flex-wrap: wrap;
     text-align: center;
     gap: 3px;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgb(184, 15, 3);
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    main {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-images img{
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .data-border {
+        position: absolute;
+        top: 0.8rem;
+        left: 2rem;
+        width: 400px;
+        z-index: 10;
+        border: 1px solid bisque;
+        background-color: rgba(253, 249, 249, 0.32);
+    }
+
+
+    .weather-border{
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 400px;
+        z-index: 10;
+        border: 1px solid bisque;
+        background-color: rgba(253, 249, 249, 0.32);
+    }
+
+
+    .weather-icon{
+        display: none;
+    }
+
+    .secondh::after{
+        content: "         🌧";
+    }
 }
