@@ -95,6 +95,7 @@ main{
 .areas{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
     gap: 3px;
 }
