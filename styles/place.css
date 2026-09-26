@@ -92,9 +92,10 @@ footer{
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
-    background-color: rgb(184, 15, 3);
+    background-color: rgb(107, 8, 1);
     gap: 0.8rem;
     margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.897) ;
 }
 
 
