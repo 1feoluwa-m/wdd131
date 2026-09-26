@@ -11,14 +11,12 @@ body{
 }
 
 header{
-    background-color: rgb(1, 39, 1) ;
+    background-color: rgb(3, 117, 3) ;
     color: rgba(255, 255, 255, 0.897);
     text-align: center;
     font-weight: bolder;
     font-size: 1.3rem;
-    border-bottom: 4px solid black;
-    border-right: 4px solid rgba(202, 8, 8, 0.87);
-    border-left: 4px solid rgba(202, 8, 8, 0.87);
+    border-bottom: 4px solid rgb(155, 6, 6);
     padding: 0.5rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
@@ -86,8 +84,11 @@ main{
     width: 100%;
     height: auto;
     object-fit: cover;
+    border: 4px solid #ccc;
+    padding: 0.1rem;
     border-radius: 6px;
     display: block;
-    margin-top: 1rem;
+    margin: 0.2rem;
+    margin-top: 0.5rem;
 
 }
