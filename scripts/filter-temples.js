@@ -161,7 +161,7 @@ document.querySelector("#large").addEventListener("click", () => {
 });
 
 document.querySelector("#small").addEventListener("click", () => {
-  createTempleCard(temples.filter(t => t.area < 90000));
+  createTempleCard(temples.filter(t => t.area < 10000));
 });
 
 document.querySelector("#home").addEventListener("click", () => {
