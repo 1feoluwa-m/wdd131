@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+header{
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+    background-color: beige;
+    padding-bottom: 1.5rem;
+}
+
+.header-place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#hamburger-button{
+    font-size: 1.5rem;
+    background: none;
+    color: #916767e8;
+    border: none;
+    cursor: pointer;
+    order: 1;
+}
+
+
+header p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: rgb(4, 65, 54);
+}
+
+header nav{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    align-items: flex-end;
+
+}
+
+header nav.show{
+    display: flex;
+}
+
+#hamburger-button::before{
+    content: "\2630";
+}
+
+#hamburger-button.open::before{
+    content: "❌";
+}
+
+main { 
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main h1{
+    text-align: center;
+    color: rgb(4, 65, 54);
+
+}
+
+img{
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    display: block;
+}
+
+figure{
+    margin: 1rem;
+    background-color: rgb(191, 219, 219);
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+figcaption{
+    padding: 6px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.temple-contained-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: beige;
+    margin-top: 2rem;
+}
