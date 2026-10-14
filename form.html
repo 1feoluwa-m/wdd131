@@ -14,60 +14,63 @@
 </head>
 
 <body>
-    <h1>Product Review</h1>
-    <form action="review.html" method="get">
-        <label for="productName">Product Name</label>
-        <select id="productName" name="productName" required>
-            <option value="" disabled selected>Select a Product....</option>
-        </select>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product....</option>
+            </select>
 
-        <fieldset>
-            <legend>Overall Rating </legend>
-            <input type="radio" id="rate1" name="rating" value="1" required>
-            <label for="rate1">⭐</label>
+            <fieldset>
+                <legend>Overall Rating </legend>
+                <input type="radio" id="rate1" name="rating" value="1" required>
+                <label for="rate1">⭐</label>
 
-            <input type="radio" id="rate2" name="rating" value="2" required>
-            <label for="rate2">⭐⭐</label>
+                <input type="radio" id="rate2" name="rating" value="2" required>
+                <label for="rate2">⭐⭐</label>
 
-            <input type="radio" id="rate3" name="rating" value="3" required>
-            <label for="rate3">⭐⭐⭐</label>
+                <input type="radio" id="rate3" name="rating" value="3" required>
+                <label for="rate3">⭐⭐⭐</label>
 
-            <input type="radio" id="rate4" name="rating" value="4" required>
-            <label for="rate4">⭐⭐⭐⭐</label>
+                <input type="radio" id="rate4" name="rating" value="4" required>
+                <label for="rate4">⭐⭐⭐⭐</label>
 
-            <input type="radio" id="rate5" name="rating" value="5" required>
-            <label for="rate5">⭐⭐⭐⭐⭐</label>
-        </fieldset>
+                <input type="radio" id="rate5" name="rating" value="5" required>
+                <label for="rate5">⭐⭐⭐⭐⭐</label>
+            </fieldset>
 
-        <label for="installD">Date of Installation</label>
-        <input type="date" id="installD" name="installD" required>
+            <label for="installD">Date of Installation</label>
+            <input type="date" id="installD" name="installD" required>
 
-        <fieldset>
-            <legend>Useful Features</legend>
+            <fieldset>
+                <legend>Useful Features</legend>
 
-            <input type="checkbox" id="fast" name="features" value="fast">
-            <label for="fast">Fast</label>
+                <input type="checkbox" id="fast" name="features" value="fast">
+                <label for="fast">Fast</label>
 
-            <input type="checkbox" id="reliable" name="features" value="reliable">
-            <label for="reliable">Reliable</label>
+                <input type="checkbox" id="reliable" name="features" value="reliable">
+                <label for="reliable">Reliable</label>
 
-            <input type="checkbox" id="perform" name="features" value="perform">
-            <label for="perform">Performance</label>
+                <input type="checkbox" id="perform" name="features" value="perform">
+                <label for="perform">Performance</label>
 
-            <input type="checkbox" id="design" name="features" value="design">
-            <label for="design">Design</label>
-        </fieldset>
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
+            </fieldset>
 
 
-        <label for="review">Written Review (Optional)</label>
-        <textarea id="review" name="review" rows="6"></textarea>
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review" rows="6"></textarea>
 
-        <label for="username">Your Name (Optional)</label>
-        <input type="text" id="username" name="username">
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
 
-        <input type="submit" value="Post Review">
-    </form>
-
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
 
     <footer>
         <p>© <span id="currentyear"></span> Akinola Michael Ifeoluwa, Nigeria.</p>
