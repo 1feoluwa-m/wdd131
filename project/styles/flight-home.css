@@ -492,7 +492,6 @@ input[type="submit"]{
  
     .book-now img {
         height: auto;
-        width: calc(100% - 2rem);  
     }
  
  
@@ -520,10 +519,6 @@ input[type="submit"]{
  
  
     
-    #flight-table {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; 
-    }
  
     table { font-size: 0.85rem; }
  
@@ -539,7 +534,6 @@ input[type="submit"]{
     .boarding-pass {
         padding: 16px;
         max-height: 90vh;     
-        overflow-y: auto;
     }
  
     .ticket-buttons { flex-direction: column; } 
