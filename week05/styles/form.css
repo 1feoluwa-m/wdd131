@@ -30,6 +30,9 @@ fieldset{
     padding: 1rem;
 }
 
+textarea{
+    resize: none;
+}
 
 
 input[type="submit"]{
