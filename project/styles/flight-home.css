@@ -1,0 +1,598 @@
+:root{
+    --main-header-bg: rgb(221, 220, 220, 0.5);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+   display: grid;
+   grid-template-columns: 160px 1fr;
+   margin: 0 auto;
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/*everything header ends here*/
+
+
+
+
+.header-content{
+    position: relative;
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.weather-display{
+    border: 1px white;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    background-color: rgb(239, 241, 245, 0.1);
+    position: absolute;
+    bottom: 0.7rem;
+    z-index: 10;
+    right: 4rem;
+}
+
+.weather-display img, .weather-display h2{
+    padding: 0.5rem;
+    margin: 0.3rem 0;
+}
+
+.weather-item{
+    padding: 15px;
+}
+
+/*everything concerning the hero image and the weather stuff ends here*/
+
+main h1, main h2{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--main-header-bg);
+}
+
+
+.outing-views figure{
+    margin: 2rem;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    background-color: rgb(113, 163, 236, 0.2);
+}
+
+
+.outing-views img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.outing-views{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+/* Everything on the chronicles ends here*/
+
+.book-now{
+    text-align: center;
+    border-radius: 10px;
+}
+
+.book-now p{
+    line-height: 3;
+}
+
+
+.book-now img{
+    height: 200px;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid lightskyblue;
+}
+
+
+.bookings{
+    padding: 0;
+    margin: 0; 
+}
+
+
+.bookings li{
+    list-style: none;
+    padding: 1rem;
+    background-color: var(--main-header-bg);
+    margin-bottom: 2rem;
+}
+
+.bookings li a{
+    text-decoration: none;
+    color: rgb(14, 133, 238);
+}
+
+
+.bookings li a:hover{
+    text-decoration: underline;
+}
+
+/*everything concerning the booking stuff ends there*/
+
+.membership-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.members{
+    margin: 1rem;
+    line-height: 2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0;
+    border: 1px solid var(--main-header-bg);
+    padding: 1rem;
+}
+
+.members h2{
+    border-radius: 10px;
+}
+
+
+.members input[type="text"],
+.members input[type="email"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #999;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+}
+
+.terms{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+.members button{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--main-header-bg);
+}
+
+.members button:hover{
+    background-color: rgb(221, 220, 220, 1);
+}
+
+.members p{
+    padding: 0.5rem;
+}
+
+.suggestions{
+    margin: 1rem;
+    line-height: 2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0;
+    border: 1px solid var(--main-header-bg);
+    padding: 1rem;
+}
+
+.suggestions h2{
+    border-radius: 10px;
+}
+
+
+.suggestions textarea{
+     display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #999;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.suggestions button{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--main-header-bg);
+}
+
+.suggestions button:hover{
+    background-color: rgb(221, 220, 220, 1);
+}
+
+
+.suggestions p{
+    padding: 0.5rem;
+}
+
+footer{
+    background-color: var(--main-header-bg);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.s-media{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.s-media img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.s-media a:hover img{
+    transform: scale(1.15);
+}
+
+.purpose{
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.purpose img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+.purpose p{
+    margin: 0.5rem;
+    line-height: 3;
+    padding: 4rem;
+    font-weight: bold;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.purposeful{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+}
+
+
+.horizon{
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.horizon img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position:  bottom;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+
+.horizon p{
+    margin: 0.5rem;
+    line-height: 3;
+    padding: 4rem;
+    font-weight: bold;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.horizons{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+}
+
+.standards{
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.standards h2{
+    margin-top: 1rem;
+}
+
+.standards p{
+    margin: 0.5rem;
+    line-height: 3;
+    padding: 4rem;
+    font-weight: bold;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+
+.work-on{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid rgb(217, 233, 238, 0.5);
+    border-radius: 10px;
+}
+
+.work-on img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.topping{
+    text-align: center;
+    font-size: large;
+    padding: 2rem;
+    line-height: 2;
+    font-weight: bolder;
+}
+
+form{
+    background: #d9d2e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+label, legend{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"], textarea{
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+}
+
+fieldset{
+    border: none;
+    padding: 1rem;
+}
+
+textarea{
+    resize: none;
+}
+
+
+input[type="submit"]{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.framings{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.5rem;
+    }
+ 
+    header img {
+        height: 90px;   
+        width: auto;   
+    }
+    header nav {
+        flex-wrap: wrap;          
+        justify-content: center;
+        gap: 0.5rem 1.25rem;      
+        padding: 0 1rem;
+        text-align: center;
+    }
+ 
+    header nav a {
+        padding: 0.5rem 0.25rem; 
+    }
+ 
+ 
+    
+    .weather-display {
+        position: static;
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem;
+        background-color: rgb(239, 241, 245);  /* solid, because it no longer sits on a photo */
+    }
+ 
+ 
+    main h1 { font-size: 1.6rem; padding: 0.75rem; }
+    main h2 { font-size: 1.3rem; padding: 0.75rem; }
+ 
+    .purpose p,
+    .horizon p,
+    .standards p {
+        padding: 1.25rem;
+        line-height: 1.7;
+    }
+ 
+    .book-now p { line-height: 1.8; }
+ 
+    .topping { padding: 1rem; font-size: 1rem; }
+ 
+ 
+   
+    .purposeful,
+    .horizons,
+    .membership-form,
+    .framings {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+ 
+    
+    .purpose img,
+    .horizon img {
+        width: 100%;
+        height: 220px;
+        margin: 0;
+    }
+ 
+ 
+   
+    .outing-views,
+    .work-on,
+    .imaging {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+ 
+    .outing-views figure { margin: 1rem; }
+ 
+    .outing-views img,
+    .work-on img,
+    .welcoming img {
+        height: 220px;   
+    }
+ 
+    .book-now img {
+        height: auto;
+        width: calc(100% - 2rem);  
+    }
+ 
+ 
+   
+    form,
+    .members,
+    .suggestions {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+ 
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        font-size: 16px;
+    }
+ 
+    button,
+    input[type="submit"] {
+        min-height: 44px;
+    }
+ 
+    .suggestions textarea { height: 180px; }
+ 
+ 
+    
+    #flight-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+    }
+ 
+    table { font-size: 0.85rem; }
+ 
+    th, td {
+        padding: 6px 8px;
+        white-space: nowrap;
+    }
+ 
+ 
+    .ticket-overlay { padding: 0.5rem; }
+ 
+    .boarding-card,
+    .boarding-pass {
+        padding: 16px;
+        max-height: 90vh;     
+        overflow-y: auto;
+    }
+ 
+    .ticket-buttons { flex-direction: column; } 
+ 
+    .pass-info {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+ 
+ 
+   
+    .s-media { justify-content: center; }
+}
+ 
+
+
+
+
+
+
+@media (max-width: 480px) {
+    main h1 { 
+        font-size: 1.4rem; 
+    }
+    main h2 { 
+        font-size: 1.15rem; 
+    }
+ 
+    header nav { 
+        gap: 0.25rem 0.9rem; 
+        font-size: 0.95rem; 
+    }
+ 
+    .outing-views img,
+    .work-on img,
+    .welcoming img,
+    .purpose img,
+    .horizon img {
+        height: 180px;
+    }
+ 
+    .outing-views figure { 
+        margin: 0.5rem; 
+    }
+ 
+    .purpose p,
+    .horizon p,
+    .standards p { 
+        padding: 1rem; 
+    }
+ 
+    table { 
+        font-size: 0.8rem; 
+    }
+}
+ 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/flight-trips.css">
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+     <header>
+        <img src="images/mia-logo-chosen-one (1).png" alt="MIA Logo" height="150">
+        <nav>
+            <a href="flight-home.html" target="_blank">Home</a>
+            <a href="flight-trips.html" target="_blank">Bookings and Trips</a>
+            <a href="flight-heritage.html" target="_blank">Our Heritage</a>
+            <a href="flight-contact.html" target="_blank">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="header-content">
+            <img class="hero-img" src="images/airplane-hero-image.jpg" alt="MIA Airline Background Image">
+            <section class="weather-display">
+                <h2>&#9992 - Weather</h2>
+                <img src="images/rainy-weather.svg" alt="Rainy Weather Icon">
+                <div id="flight-weather" class="loading">Loading weather data.....</div>
+            </section>
+        </div>
+        <!-- the radio button stuff to pick flight
+        the difference in prizes
+        some pictures of the pilot in cockpit:we cant wait to have you
+        then some aesthetic views
+        -->
+
+        <div class="welcoming">
+            <h1>We look forward to welcoming you aboard</h1>
+            <div class="imaging">
+                <img src="images/passenger-putting-bag-up.webp" alt="A Passenger putting her back up in the airplane">
+                <img src="images/woman-smiling-airplane-window.webp" alt="A Woman close to the airplane window smiling">
+                <img src="images/pilots-in-cockpit.avif" alt="Pilots in the airplane's cockpit">
+            </div>
+        </div>
+            
+
+        <div id="boarding-ticket" class="ticket-overlay" style="display: none;">
+            <div class="boarding-card">
+                <h2>Book Flight - <span id="ticket-num"></span></h2>
+                <p><strong id="ticket-route"></strong></p>
+
+                <label for="class-select">Select Travel Class</label>
+                <select id="class-select">
+                    <option value="Economy Class">Economy Class ($300)</option>
+                    <option value="Premium Economy">Premium Economy ($500)</option>
+                    <option value="Business Class">Business Class ($950)</option>
+                    <option value="First Class">First Class ($1,800)</option>
+                </select>
+
+                <label for="pass-name">Full Name:</label>
+                <input type="text" id="pass-name" placeholder="e.g Jenna Free" required>
+                <div class="ticket-buttons">
+                    <button onclick="confirmBooking()" class="b-confirmation">Confirm Booking</button>
+                    <button onclick="closeTicket()" class="b-cancellation">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ticket-confirmation" class="ticket-overlay" style="display: none;">
+            <div class="boarding-pass">
+                <div class="pass-header">
+                    <h3>MIA Airlines</h3>
+                    <span><strong>Boarding Pass</strong></span>
+                </div>
+                <div class="pass-body">
+                    <div class="pass-info">
+                        <div><small>PASSENGER</small><p id="passenger-name">-</p></div>
+                        <div><small>FLIGHT</small><p id="passenger-flight">-</p></div>
+                    </div>
+                    <div class="pass-info">
+                        <div><small>FROM</small><p id="passenger-origin">-</p></div>
+                        <div><small>TO</small><p id="passenger-destination">-</p></div>
+                    </div>
+                    <div class="pass-info">
+                        <div><small>DEPARTURE</small><p id="passenger-departure">-</p></div>
+                        <div><small>CLASS</small><p id="passenger-class">-</p></div>
+                        <div><small>GATE</small><p>M-07</p></div>
+                    </div>
+                </div>
+                <div class="pass-footer">
+                    <button onclick="closeConfirmation()" class="b-confirmation">Complete & Print</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="flight-an-book">
+            <h1>Curated Travel Schedule</h1>
+            <div id="flight-announcement">Verifying delays....</div>
+            <div id="flight-table">Loading flight schedule......</div>
+        </div>
+
+
+    </main>
+
+
+
+    <footer>
+        <p>© <span id="currentyear"></span> Akinola Michael Ifeoluwa, Nigeria.</p>
+        <p id="lastModified"></p>
+        <div class="s-media">
+              
+            <a href="https://www.x.com/" target="_blank" rel="noopener">
+                <img src="images/x-icon.png" alt="X Icon">
+            </a>
+            
+              
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram-icon.png" alt="Instagram Icon">
+            </a>
+            
+            
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook-icon.png" alt="Facebook Icon">
+            </a>
+            
+        
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
+            </a>  
+        </div>
+    </footer>
+    
+
+
+</body>
+</html>

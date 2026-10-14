@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/flight-home.css">
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/mia-logo-chosen-one (1).png" alt="MIA Logo" height="150">
+        <nav>
+            <a href="flight-home.html" target="_blank">Home</a>
+            <a href="flight-trips.html" target="_blank">Bookings and Trips</a>
+            <a href="flight-heritage.html" target="_blank">Our Heritage</a>
+            <a href="flight-contact.html" target="_blank">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="header-content">
+            <img class="hero-img" src="images/airplane-hero-image.jpg" alt="MIA Airline Background Image">
+            <section class="weather-display">
+                <h2>&#9992 - Weather</h2>
+                <img src="images/rainy-weather.svg" alt="Rainy Weather Icon">
+                <div id="flight-weather" class="loading">Loading weather data.....</div>
+            </section>
+        </div>
+
+        <div class="topping">
+            <p>MIA Airlines</p>
+            <p>87 plot 230B, Carabobo, Valencia.</p>
+            <p>Customer Service Landline : +880 (4568) (760)</p>
+        </div>
+
+        <div class="framings">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d125667.11581940477!2d-68.0766267788349!3d10.172740572969596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1760425833882!5m2!1sen!2sng"
+                width="600" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <form action="review.html" method="get">
+                <h1>Flight Reviews</h1>
+
+                <fieldset>
+                    <legend>Overall Rating </legend>
+                    <input type="radio" id="rate1" name="rating" value="1" required>
+                    <label for="rate1">⭐</label>
+
+                    <input type="radio" id="rate2" name="rating" value="2" required>
+                    <label for="rate2">⭐⭐</label>
+
+                    <input type="radio" id="rate3" name="rating" value="3" required>
+                    <label for="rate3">⭐⭐⭐</label>
+
+                    <input type="radio" id="rate4" name="rating" value="4" required>
+                    <label for="rate4">⭐⭐⭐⭐</label>
+
+                    <input type="radio" id="rate5" name="rating" value="5" required>
+                    <label for="rate5">⭐⭐⭐⭐⭐</label>
+                </fieldset>
+
+            
+                
+
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="6"></textarea>
+
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username">
+
+                <input type="submit" value="Post Review">
+            </form>
+
+
+        </div>
+
+
+        
+    </main>
+
+
+
+
+    <footer>
+                <p>© <span id="currentyear"></span> Akinola Michael Ifeoluwa, Nigeria.</p>
+        <p id="lastModified"></p>
+        <div class="s-media">
+              
+            <a href="https://www.x.com/" target="_blank" rel="noopener">
+                <img src="images/x-icon.png" alt="X Icon">
+            </a>
+            
+              
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram-icon.png" alt="Instagram Icon">
+            </a>
+            
+            
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook-icon.png" alt="Facebook Icon">
+            </a>
+            
+        
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
+            </a>  
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+</html>
