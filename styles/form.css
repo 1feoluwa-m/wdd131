@@ -52,3 +52,10 @@ footer{
     margin-top: 2rem;
     color: rgba(100, 97, 97, 0.897) ;
 }
+
+@media screen  and (min-width: 650px) {
+body{
+    max-width: 800px;
+    margin: 0 auto;
+}
+}
